@@ -5,5 +5,7 @@
 /.idea/
 /static/
 /media/
+.DS_Store
 gettogether.code-workspace
 settings.json
+node_modules
