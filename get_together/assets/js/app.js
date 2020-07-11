@@ -11,5 +11,3 @@
 //
 import 'bootstrap';
 import './components/font-awesome';
-
-alert("Hello world")

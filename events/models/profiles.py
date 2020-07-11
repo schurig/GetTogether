@@ -109,13 +109,13 @@ class UserProfile(models.Model):
                 or self.avatar.name is None
                 or self.avatar.name == ""
             ):
-                return settings.STATIC_URL + "img/avatar_placeholder.png"
+                return settings.STATIC_URL + "images/avatar_placeholder.png"
             elif self.avatar.name.startswith("http"):
                 return self.avatar.name
             else:
                 return self.avatar.url
         except:
-            return settings.STATIC_URL + "img/avatar_placeholder.png"
+            return settings.STATIC_URL + "images/avatar_placeholder.png"
 
     def get_timezone(self):
         try:
@@ -527,7 +527,7 @@ class Team(models.Model):
         elif self.category is not None:
             return self.category.img_url
         else:
-            return static("img/team_placeholder.png")
+            return static("images/team_placeholder.png")
 
     @property
     def full_img_url(self):

@@ -422,7 +422,7 @@ class CommonEvent(models.Model):
         elif self.category and self.category.img_url:
             return self.category.img_url
         else:
-            return static("img/team_placeholder.png")
+            return static("images/team_placeholder.png")
 
     def location(self):
         if self.city:

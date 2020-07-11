@@ -229,7 +229,7 @@ THEME_CONFIG = {
         "which_team_hosting": _("Which team is hosting this event"),
         "host_event": _("Host Event"),
     },
-    "images": {"nav_logo": "img/logo_b_v1.png"},
+    "images": {"nav_logo": "images/logo.png"},
 }
 
 # Keep this at the end of settings.py to allow overriding settings in local deployments

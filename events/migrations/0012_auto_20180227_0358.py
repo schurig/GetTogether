@@ -13,7 +13,7 @@ class Migration(migrations.Migration):
             model_name="searchable",
             name="img_url",
             field=models.URLField(
-                default="https://gettogether.community/static/img/team_placeholder.png"
+                default="https://gettogether.community/static/images/team_placeholder.png"
             ),
             preserve_default=False,
         ),
