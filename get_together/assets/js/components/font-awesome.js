@@ -1,9 +1,15 @@
-import { config, library, dom } from '@fortawesome/fontawesome-svg-core'
+import {
+  config,
+  library,
+  dom
+} from '@fortawesome/fontawesome-svg-core'
 
 // config.mutateApproach = 'sync'
 
-import { fas } from '@fortawesome/free-solid-svg-icons'
+import {
+  fas
+} from '@fortawesome/free-solid-svg-icons'
 
-library.add( fas )
+library.add(fas)
 
 dom.watch()

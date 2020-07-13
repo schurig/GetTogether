@@ -11,3 +11,4 @@
 //
 import 'bootstrap';
 import './components/font-awesome';
+import './components/select2';
