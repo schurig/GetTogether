@@ -1,0 +1,25 @@
+{% load static markup i18n %}
+
+{% block account_setup_alert %}
+{% if account_needs_setup %}
+<div class="alerts">
+  <div class="alert alert-warning">
+    {% blocktrans %}<a href="{{account_setup_url}}">Click here</a> to finish your account setup.{% endblocktrans %}
+  </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% if tip %}
+<div class="alerts">
+  <div class="alert {{ tip.tags }}"><strong>{% trans "Tip:" %} </strong>{{ tip.text|safe }}</div>
+</div>
+{% endif %}
+
+{% if messages %}
+<div class="alerts">
+  {% for message in messages %}
+  <div class="alert{% if message.tags %} {{ message.tags }}{% endif %}">{{ message }}</div>
+  {% endfor %}
+</div>
+{% endif %}
