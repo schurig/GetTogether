@@ -38,6 +38,7 @@ ALLOWED_EMAILS_PER_DAY = 100
 # Application definition
 
 INSTALLED_APPS = [
+    "crispy_forms",
     "get_together",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -60,6 +61,7 @@ INSTALLED_APPS = [
     "totd",
 ]
 
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 LOGIN_URL = "login"
 LOGOUT_URL = "logout"
 SETUP_URL = "/profile/+confirm_profile"
